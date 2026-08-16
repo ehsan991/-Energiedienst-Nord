@@ -1,5 +1,5 @@
-import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
+import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import de from '@/content/de'
 import en from '@/content/en'
 import { ServiceCard } from '@/components/ServiceCard'
@@ -9,7 +9,9 @@ export default async function Home({ params }: { params: Promise<{ locale: 'de'|
   const { locale } = await params
   const t = locale === 'de' ? de : en
   const services = [
-    ['01', 'energy', t.services.energy], ['02', 'finance', t.services.finance], ['03', 'real-estate', t.services.realEstate], ['04', 'telecom', t.services.telecom]
+    ['01', 'energiebeschaffung', t.services.procurement],
+    ['02', 'strom', t.services.electricity],
+    ['03', 'gas', t.services.gas],
   ] as const
 
   return <>
@@ -21,21 +23,12 @@ export default async function Home({ params }: { params: Promise<{ locale: 'de'|
           <p className="eyebrow">{t.home.eyebrow}</p>
           <h1>{t.home.title}</h1>
           <p className="hero-lead">{t.home.intro}</p>
-          <div className="hero-actions">
-            <Link className="button" href={`/${locale}/kontakt`}>
-              {t.home.primary}
-              <ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" />
-            </Link>
-            <a className="text-link" href="#services">
-              {t.home.secondary}
-              <ArrowDown size={16} strokeWidth={1.7} aria-hidden="true" />
-            </a>
-          </div>
+          <div className="hero-actions"><Link className="button" href={`/${locale}/kontakt`}>{t.home.primary}<ArrowUpRight size={17} strokeWidth={1.7}/></Link><a className="text-link" href="#services">{t.home.secondary}<ArrowDown size={16} strokeWidth={1.7}/></a></div>
         </div>
         <div className="hero-panel">
-          <div className="market-line"><span>MARKET / STRATEGY</span><span>EDN — 2026</span></div>
+          <div className="market-line"><span>ENERGY / STRATEGY</span><span>EDN — 2026</span></div>
           <div className="signal-visual"><div className="signal-ring r1"/><div className="signal-ring r2"/><div className="signal-ring r3"/><div className="signal-core">EDN</div></div>
-          <div className="panel-caption"><span>Analyse</span><span>Strategie</span><span>Umsetzung</span></div>
+          <div className="panel-caption"><span>Analyse</span><span>Strategie</span><span>Beschaffung</span></div>
         </div>
       </div>
       <div className="shell stats-row">{t.home.stats.map((s:any)=><div className="stat" key={s.value}><strong>{s.value}</strong><span>{s.label}</span></div>)}</div>
@@ -47,6 +40,6 @@ export default async function Home({ params }: { params: Promise<{ locale: 'de'|
 
     <section id="process" className="section"><div className="shell"><div className="section-heading"><div><p className="eyebrow">{t.home.processEyebrow}</p><h2>{t.home.processTitle}</h2></div></div><div className="process-grid">{t.home.process.map((p:any)=><article key={p.n}><span>{p.n}</span><h3>{p.title}</h3><p>{p.text}</p></article>)}</div></div></section>
 
-    <section className="section cta-section"><Noise/><div className="shell cta-inner"><p className="eyebrow">{t.home.ctaEyebrow}</p><h2>{t.home.ctaTitle}</h2><p>{t.home.ctaText}</p><Link href={`/${locale}/kontakt`} className="button button-light">{t.home.primary}<ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" /></Link></div></section>
+    <section className="section cta-section"><Noise/><div className="shell cta-inner"><p className="eyebrow">{t.home.ctaEyebrow}</p><h2>{t.home.ctaTitle}</h2><p>{t.home.ctaText}</p><Link href={`/${locale}/kontakt`} className="button button-light">{t.home.primary}<ArrowUpRight size={17} strokeWidth={1.7}/></Link></div></section>
   </>
 }
