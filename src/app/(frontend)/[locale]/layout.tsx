@@ -10,6 +10,7 @@ import de from '@/content/de'
 import en from '@/content/en'
 import '../../globals.css'
 import '../../heroui.css'
+import '../../energy-services.css'
 
 export function generateStaticParams() { return routing.locales.map((locale) => ({ locale })) }
 
