@@ -11,6 +11,7 @@ import { Footer } from '@/components/Footer'
 import '../../globals.css'
 import '../../heroui.css'
 import '../../energy-services.css'
+import '../../multilingual.css'
 
 export function generateStaticParams() { return routing.locales.map((locale) => ({ locale })) }
 
@@ -21,18 +22,5 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const messages = await getMessages()
   const t = getContent(typedLocale)
   const dir = rtlLocales.includes(typedLocale) ? 'rtl' : 'ltr'
-
-  return (
-    <html lang={locale} dir={dir} suppressHydrationWarning>
-      <body>
-        <ThemeProvider>
-          <NextIntlClientProvider messages={messages}>
-            <Header locale={typedLocale} t={t} />
-            <main>{children}</main>
-            <Footer locale={typedLocale} t={t} />
-          </NextIntlClientProvider>
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+  return <html lang={locale} dir={dir} suppressHydrationWarning><body><ThemeProvider><NextIntlClientProvider messages={messages}><Header locale={typedLocale} t={t}/><main>{children}</main><Footer locale={typedLocale} t={t}/></NextIntlClientProvider></ThemeProvider></body></html>
 }
