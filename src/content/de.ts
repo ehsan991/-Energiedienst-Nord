@@ -13,9 +13,9 @@ const de = {
     primary: 'Beratung vereinbaren',
     secondary: 'Leistungen entdecken',
     stats: [
-      {value: 'Strom', label: 'Beschaffung & Optimierung'},
-      {value: 'Gas', label: 'Strategie & Vertragsmanagement'},
-      {value: '1:1', label: 'persönliche Betreuung'}
+      {value: 'Strom & Gas', label: 'Beschaffung aus einer Hand'},
+      {value: 'Spot · Termin', label: 'flexible Beschaffungsmodelle'},
+      {value: 'Monitoring', label: 'laufende Marktbeobachtung'}
     ],
     servicesEyebrow: 'Unsere Leistungen',
     servicesTitle: 'Energieberatung, die Beschaffung planbar macht.',
