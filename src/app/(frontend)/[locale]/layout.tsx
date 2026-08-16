@@ -9,6 +9,7 @@ import { Footer } from '@/components/Footer'
 import de from '@/content/de'
 import en from '@/content/en'
 import '../../globals.css'
+import '../../heroui.css'
 
 export function generateStaticParams() { return routing.locales.map((locale) => ({ locale })) }
 
