@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import { ArrowDown, ArrowUpRight, Check, Network } from 'lucide-react'
-import { getContent } from '@/content'
+import { getResolvedContent } from '@/content/resolved'
 import type { Locale } from '@/i18n/locales'
 import { ServiceCard } from '@/components/ServiceCard'
 import { Noise } from '@/components/Noise'
 
 export default async function Home({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params
-  const t = getContent(locale)
+  const t = getResolvedContent(locale)
   const services = [['01','energiebeschaffung',t.services.procurement],['02','strom',t.services.electricity],['03','gas',t.services.gas]] as const
   return <>
     <section className="hero"><Noise/><div className="hero-orb orb-a"/><div className="hero-orb orb-b"/><div className="shell hero-grid"><div className="hero-copy"><p className="eyebrow">{t.home.eyebrow}</p><h1>{t.home.title}</h1><p className="hero-lead">{t.home.intro}</p><div className="hero-actions"><Link className="button" href={`/${locale}/kontakt`}>{t.home.primary}<ArrowUpRight size={17}/></Link><a className="text-link" href="#services">{t.home.secondary}<ArrowDown size={16}/></a></div></div><div className="hero-panel"><div className="market-line"><span>ENERGY / STRATEGY</span><span>EDN — 2026</span></div><div className="signal-visual"><div className="signal-ring r1"/><div className="signal-ring r2"/><div className="signal-ring r3"/><div className="signal-core">EDN</div></div><div className="panel-caption"><span>Analyse</span><span>Strategie</span><span>Beschaffung</span></div></div></div></section>
