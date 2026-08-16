@@ -1,88 +1,47 @@
 const de = {
   nav: {
-    services: 'Leistungen',
-    company: 'Unternehmen',
-    process: 'Arbeitsweise',
-    contact: 'Kontakt',
-    consultation: 'Beratung anfragen'
+    services: 'Leistungen', company: 'Unternehmen', process: 'Arbeitsweise', contact: 'Kontakt', consultation: 'Beratung anfragen'
   },
   home: {
     eyebrow: 'Energiedienst Nord · Energieberatung mit Substanz',
     title: 'Komplexe Energiemärkte. Klare Entscheidungen.',
-    intro: 'Wir unterstützen Unternehmen bei der strategischen Beschaffung von Strom und Gas – unabhängig, transparent und mit einem klaren Blick auf Kosten, Risiken und langfristige Planungssicherheit.',
-    primary: 'Beratung vereinbaren',
-    secondary: 'Leistungen entdecken',
-    stats: [
-      {value: 'Strom & Gas', label: 'Beschaffung aus einer Hand'},
-      {value: 'Spot · Termin', label: 'flexible Beschaffungsmodelle'},
-      {value: 'Monitoring', label: 'laufende Marktbeobachtung'}
-    ],
-    servicesEyebrow: 'Unsere Leistungen',
-    servicesTitle: 'Energieberatung, die Beschaffung planbar macht.',
-    servicesText: 'Wir konzentrieren uns vollständig auf Strom und Gas – von der Marktanalyse über die Beschaffungsstrategie bis zur laufenden Optimierung bestehender Verträge.',
-    whyEyebrow: 'Warum Energiedienst Nord',
-    whyTitle: 'Gute Energieentscheidungen beginnen mit Marktverständnis.',
-    whyText: 'Preisbewegungen, Laufzeiten und Beschaffungsmodelle verändern sich kontinuierlich. Wir schaffen Transparenz und entwickeln Strategien, die zu Verbrauch, Risikoprofil und Unternehmenszielen passen.',
+    intro: 'Wir unterstützen Privat- und Gewerbekunden bei Strom und Gas – transparent, persönlich und mit einem klaren Blick auf passende Tarife, Vertragsbedingungen und eine zuverlässige Abwicklung.',
+    primary: 'Beratung vereinbaren', secondary: 'Leistungen entdecken',
+    trustEyebrow: 'Vertrauen & Beratung',
+    trustTitle: 'Ihr zuverlässiger Partner für Strom und Gas.',
+    trustText1: 'Wir unterstützen Privat- und Gewerbekunden dabei, passende Strom- und Gasverträge zu finden und fundierte Entscheidungen im Energiemarkt zu treffen. Dabei verbinden wir persönliche Beratung mit transparenten Vergleichen und einer zuverlässigen Abwicklung.',
+    trustText2: 'Unser Ziel ist es, komplexe Angebote, Preise und Vertragsmodelle verständlich zu machen und gemeinsam mit Ihnen eine Lösung zu finden, die zu Ihrem tatsächlichen Bedarf passt.',
+    trustClaim: 'Kompetent beraten. Transparent vermittelt. Zuverlässig betreut.',
+    trustPrinciples: ['Persönliche Betreuung', 'Transparente Beratung', 'Zuverlässige Abwicklung'],
+    servicesEyebrow: 'Unsere Leistungen', servicesTitle: 'Energieberatung, die Entscheidungen einfacher macht.', servicesText: 'Unser Fokus liegt auf Strom und Gas – von der persönlichen Tarifberatung und dem Angebotsvergleich bis zur strukturierten Beschaffung und laufenden Betreuung.',
+    whyEyebrow: 'Warum Energiedienst Nord', whyTitle: 'Persönlich beraten. Transparent vergleichen. Zuverlässig begleiten.', whyText: 'Der Energiemarkt ist komplex und Angebote sind nicht immer auf den ersten Blick vergleichbar. Wir schaffen Übersicht, erklären Unterschiede verständlich und begleiten Sie persönlich bis zur passenden Lösung.',
     benefits: [
-      {title: 'Unabhängige Marktbetrachtung', text: 'Wir vergleichen Beschaffungswege und Marktoptionen nach nachvollziehbaren wirtschaftlichen Kriterien.'},
-      {title: 'Transparente Kostenstruktur', text: 'Sie erhalten klare Informationen zu Preisen, Laufzeiten, Preisbestandteilen und Risiken – ohne unnötige Komplexität.'},
-      {title: 'Laufende Betreuung', text: 'Unsere Arbeit endet nicht mit dem Vertragsabschluss. Wir begleiten Markt, Verträge und neue Beschaffungsentscheidungen kontinuierlich.'}
+      {title: 'Persönliche Betreuung', text: 'Bei uns stehen Ihre individuelle Situation, Ihr Verbrauch und Ihre Anforderungen im Mittelpunkt – ohne anonyme Standardprozesse.'},
+      {title: 'Transparente Beratung', text: 'Wir machen Preise, Laufzeiten und Vertragsbedingungen nachvollziehbar und zeigen relevante Unterschiede verständlich auf.'},
+      {title: 'Zuverlässige Abwicklung', text: 'Von der Auswahl bis zum Vertragsabschluss begleiten wir die nächsten Schritte strukturiert und bleiben auch danach ansprechbar.'}
     ],
-    processEyebrow: 'Unser Prozess',
-    processTitle: 'Strukturiert von der Verbrauchsanalyse zur Beschaffung.',
+    processEyebrow: 'Unser Prozess', processTitle: 'Einfach und strukturiert zum passenden Energievertrag.',
     process: [
-      {n: '01', title: 'Bedarf verstehen', text: 'Wir erfassen Verbrauch, Vertragsstruktur, Ziele und individuelle Anforderungen.'},
-      {n: '02', title: 'Markt analysieren', text: 'Wir prüfen aktuelle Marktbedingungen, bestehende Verträge und relevante Beschaffungsoptionen.'},
-      {n: '03', title: 'Strategie entwickeln', text: 'Sie erhalten eine nachvollziehbare Empfehlung für Strom, Gas und den passenden Beschaffungszeitpunkt.'},
-      {n: '04', title: 'Umsetzung & Monitoring', text: 'Wir begleiten Ausschreibung, Vertragsabschluss und die weitere Marktbeobachtung.'}
+      {n: '01', title: 'Bedarf verstehen', text: 'Wir klären Ihre aktuelle Situation, Ihren Verbrauch und Ihre persönlichen oder betrieblichen Anforderungen.'},
+      {n: '02', title: 'Angebote prüfen', text: 'Wir vergleichen geeignete Strom- und Gasangebote sowie relevante Preise und Vertragsbedingungen.'},
+      {n: '03', title: 'Passende Lösung finden', text: 'Sie erhalten eine verständliche Empfehlung, die zu Ihrem Bedarf und Ihren Prioritäten passt.'},
+      {n: '04', title: 'Abwicklung & Betreuung', text: 'Wir begleiten den Vertragsabschluss zuverlässig und stehen Ihnen auch bei weiteren Fragen zur Seite.'}
     ],
-    ctaEyebrow: 'Persönliche Energieberatung',
-    ctaTitle: 'Lassen Sie uns Ihre Energiebeschaffung klarer und planbarer machen.',
-    ctaText: 'In einem unverbindlichen Erstgespräch prüfen wir, wo bei Strom und Gas konkret Optimierungspotenzial besteht.'
+    ctaEyebrow: 'Persönliche Energieberatung', ctaTitle: 'Lassen Sie uns gemeinsam die passende Lösung für Strom und Gas finden.', ctaText: 'In einem unverbindlichen Erstgespräch klären wir Ihre Situation und zeigen Ihnen transparent, welche Möglichkeiten für Sie sinnvoll sind.'
   },
   services: {
-    electricity: {
-      title: 'Strom',
-      eyebrow: 'Beschaffung · Marktanalyse · Vertragsoptimierung',
-      summary: 'Strategische Strombeschaffung für Unternehmen – abgestimmt auf Verbrauchsprofil, Marktumfeld, Laufzeit und individuelle Risikobereitschaft.',
-      points: ['Analyse bestehender Stromverträge', 'Lieferanten- und Konditionsvergleich', 'Spot- und Terminmarktmodelle', 'Ausschreibungen & Angebotsbewertung', 'Vertrags- und Laufzeitoptimierung', 'Laufende Marktbeobachtung']
-    },
-    gas: {
-      title: 'Gas',
-      eyebrow: 'Strategie · Kostenkontrolle · Planungssicherheit',
-      summary: 'Wir strukturieren die Gasbeschaffung transparent und entwickeln Beschaffungsmodelle, die Kosten, Flexibilität und Planungssicherheit sinnvoll ausbalancieren.',
-      points: ['Analyse bestehender Gasverträge', 'Markt- und Preisbewertung', 'Spot- und Terminmarktstrategien', 'Anbietervergleich & Ausschreibung', 'Laufzeiten- und Mengenstrategie', 'Monitoring & Nachoptimierung']
-    },
-    procurement: {
-      title: 'Energiebeschaffung & Optimierung',
-      eyebrow: 'Analyse · Strategie · Umsetzung',
-      summary: 'Für Unternehmen mit komplexeren Anforderungen entwickeln wir eine ganzheitliche Beschaffungsstrategie für Strom und Gas – inklusive Vertragsanalyse, Ausschreibung und laufender Optimierung.',
-      points: ['Verbrauchs- und Lastprofilanalyse', 'Beschaffungsstrategie für Strom & Gas', 'Spotmarkt- und Terminmarktmodelle', 'Ausschreibungen & Lieferantenvergleich', 'Kosten- und Vertragsoptimierung', 'Laufende Betreuung & Marktmonitoring']
-    }
+    electricity: {title: 'Strom', eyebrow: 'Tarifvergleich · Beratung · Vertragsoptimierung', summary: 'Passende Stromlösungen für Privat- und Gewerbekunden – transparent verglichen und persönlich auf Ihre Anforderungen abgestimmt.', points: ['Analyse bestehender Stromverträge', 'Tarif- und Anbietervergleich', 'Prüfung von Preisen und Vertragsbedingungen', 'Beratung zu Laufzeiten und Modellen', 'Unterstützung beim Vertragsabschluss', 'Persönliche Betreuung']},
+    gas: {title: 'Gas', eyebrow: 'Vergleich · Transparenz · Betreuung', summary: 'Wir unterstützen Sie bei der Auswahl eines passenden Gasvertrags und machen Preise, Konditionen und Laufzeiten verständlich vergleichbar.', points: ['Analyse bestehender Gasverträge', 'Tarif- und Anbietervergleich', 'Prüfung von Preisen und Konditionen', 'Beratung zu Laufzeiten', 'Unterstützung bei der Abwicklung', 'Persönliche Betreuung']},
+    procurement: {title: 'Energiebeschaffung & Optimierung', eyebrow: 'Analyse · Vergleich · Umsetzung', summary: 'Für Gewerbekunden mit umfangreicheren Anforderungen strukturieren wir die Beschaffung von Strom und Gas – von der Analyse bis zur passenden Vertragslösung.', points: ['Verbrauchs- und Vertragsanalyse', 'Beschaffung für Strom & Gas', 'Spotmarkt- und Terminmarktmodelle', 'Angebots- und Lieferantenvergleich', 'Kosten- und Vertragsoptimierung', 'Laufende Betreuung']}
   },
   company: {
-    eyebrow: 'Energiedienst Nord',
-    title: 'Verlässliche Energieberatung für Entscheidungen mit Wirkung.',
-    lead: 'Energiedienst Nord steht für moderne Energieberatung: persönlich in der Zusammenarbeit, analytisch in der Bewertung und klar in der Kommunikation.',
-    text1: 'Unser Fokus liegt vollständig auf Strom und Gas. Wir helfen Unternehmen dabei, Beschaffung, Kosten und Vertragsrisiken besser zu verstehen und fundierte Entscheidungen zu treffen.',
-    text2: 'Dafür verbinden wir Marktkenntnis mit strukturierten Analysen und einem breiten Blick auf verfügbare Beschaffungsmodelle. So entstehen Lösungen, die nicht nur heute attraktiv sind, sondern langfristig zur jeweiligen Verbrauchs- und Risikostruktur passen.',
-    values: ['Transparenz statt Verkaufsdruck', 'Strategie statt kurzfristiger Einzelentscheidung', 'Persönliche Verantwortung statt anonymer Prozesse', 'Langfristige Betreuung statt einmaliger Vermittlung']
+    eyebrow: 'Energiedienst Nord', title: 'Verlässliche Energieberatung für Strom und Gas.', lead: 'Energiedienst Nord steht für persönliche Beratung, transparente Vermittlung und eine zuverlässige Betreuung rund um Strom und Gas.',
+    text1: 'Wir unterstützen Privat- und Gewerbekunden dabei, Angebote besser zu verstehen, geeignete Verträge zu vergleichen und eine Lösung zu finden, die zum tatsächlichen Bedarf passt.',
+    text2: 'Dabei legen wir Wert auf verständliche Kommunikation und nachvollziehbare Entscheidungen. Unser Anspruch ist nicht der schnelle Vertragsabschluss, sondern eine Beratung, bei der Sie wissen, warum eine Lösung zu Ihnen passt.',
+    values: ['Transparente Beratung', 'Persönliche Betreuung', 'Verständliche Vergleiche', 'Zuverlässige Abwicklung']
   },
-  contact: {
-    eyebrow: 'Kontakt',
-    title: 'Der erste Schritt ist ein gutes Gespräch.',
-    text: 'Beschreiben Sie uns kurz Ihre aktuelle Situation bei Strom oder Gas. Wir melden uns persönlich und klären gemeinsam die nächsten Schritte.',
-    email: 'E-Mail',
-    phone: 'Telefon',
-    location: 'Region',
-    locationValue: 'Norddeutschland · deutschlandweit tätig'
-  },
-  footer: {
-    claim: 'Strategische Energieberatung für Strom und Gas.',
-    legal: 'Rechtliches',
-    imprint: 'Impressum',
-    privacy: 'Datenschutz'
-  }
+  contact: {eyebrow: 'Kontakt', title: 'Der erste Schritt ist ein gutes Gespräch.', text: 'Beschreiben Sie uns kurz Ihre aktuelle Situation bei Strom oder Gas. Wir melden uns persönlich und klären gemeinsam die nächsten Schritte.', email: 'E-Mail', phone: 'Telefon', location: 'Region', locationValue: 'Norddeutschland · deutschlandweit tätig'},
+  footer: {claim: 'Persönliche und transparente Beratung für Strom und Gas.', legal: 'Rechtliches', imprint: 'Impressum', privacy: 'Datenschutz'}
 }
 
 export default de
