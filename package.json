@@ -11,9 +11,12 @@
     "generate:types": "payload generate:types"
   },
   "dependencies": {
+    "@heroui/react": "latest",
+    "@heroui/styles": "latest",
     "@payloadcms/db-postgres": "latest",
     "@payloadcms/next": "latest",
     "@payloadcms/richtext-lexical": "latest",
+    "lucide-react": "latest",
     "next": "^16.2.6",
     "next-intl": "latest",
     "next-themes": "latest",
