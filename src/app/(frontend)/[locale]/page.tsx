@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, Check } from 'lucide-react'
 import de from '@/content/de'
 import en from '@/content/en'
 import { ServiceCard } from '@/components/ServiceCard'
@@ -31,7 +31,14 @@ export default async function Home({ params }: { params: Promise<{ locale: 'de'|
           <div className="panel-caption"><span>Analyse</span><span>Strategie</span><span>Beschaffung</span></div>
         </div>
       </div>
-      <div className="shell stats-row">{t.home.stats.map((s:any)=><div className="stat" key={s.value}><strong>{s.value}</strong><span>{s.label}</span></div>)}</div>
+    </section>
+
+    <section className="trust-section">
+      <div className="shell trust-grid">
+        <div className="trust-heading"><p className="eyebrow">{t.home.trustEyebrow}</p><h2>{t.home.trustTitle}</h2></div>
+        <div className="trust-copy"><p>{t.home.trustText1}</p><p>{t.home.trustText2}</p><strong>{t.home.trustClaim}</strong></div>
+      </div>
+      <div className="shell trust-principles">{t.home.trustPrinciples.map((item:any)=><div key={item}><Check size={16} strokeWidth={1.8}/><span>{item}</span></div>)}</div>
     </section>
 
     <section id="services" className="section services-section"><div className="shell"><div className="section-heading"><div><p className="eyebrow">{t.home.servicesEyebrow}</p><h2>{t.home.servicesTitle}</h2></div><p>{t.home.servicesText}</p></div><div className="services-grid">{services.map(([i,slug,s])=><ServiceCard key={slug} index={i} slug={slug} service={s} locale={locale}/>)}</div></div></section>
