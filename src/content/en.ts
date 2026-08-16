@@ -3,45 +3,44 @@ const en = {
     services: 'Services', company: 'Company', process: 'How we work', contact: 'Contact', consultation: 'Request consultation'
   },
   home: {
-    eyebrow: 'Energiedienst Nord · Advice with substance',
-    title: 'Complex markets. Clear decisions.',
-    intro: 'We help companies and private clients make strategic decisions in energy, finance and real estate – independently, transparently and with a clear view of economic opportunities and risks.',
+    eyebrow: 'Energiedienst Nord · Energy advisory with substance',
+    title: 'Complex energy markets. Clear decisions.',
+    intro: 'We support businesses with strategic electricity and gas procurement – independently, transparently and with a clear focus on cost, risk and long-term planning security.',
     primary: 'Book a consultation', secondary: 'Explore services',
     stats: [
-      {value: '360°', label: 'holistic advisory'}, {value: '1:1', label: 'personal support'}, {value: 'DE · EN', label: 'bilingual consulting'}
+      {value: 'Power', label: 'procurement & optimisation'}, {value: 'Gas', label: 'strategy & contract management'}, {value: '1:1', label: 'personal support'}
     ],
-    servicesEyebrow: 'Advisory areas', servicesTitle: 'Strategic solutions for decisions that matter.', servicesText: 'No off-the-shelf packages. We develop solutions around your current position, goals and time horizon.',
-    whyEyebrow: 'Why Energiedienst Nord', whyTitle: 'Good advice starts with understanding.', whyText: 'Markets change. Sound decisions therefore require more than a single offer: they require robust analysis, understandable comparisons and a strategy designed to remain viable over time.',
+    servicesEyebrow: 'Our services', servicesTitle: 'Energy advisory that makes procurement more predictable.', servicesText: 'We focus entirely on electricity and gas – from market analysis and procurement strategy to the ongoing optimisation of existing contracts.',
+    whyEyebrow: 'Why Energiedienst Nord', whyTitle: 'Good energy decisions start with market understanding.', whyText: 'Prices, contract terms and procurement models change continuously. We create transparency and develop strategies aligned with consumption, risk profile and business goals.',
     benefits: [
-      {title: 'Independent perspective', text: 'We assess market options using transparent, economically relevant criteria.'},
-      {title: 'Clear decision-making', text: 'You receive understandable information on costs, opportunities, terms and risks without unnecessary complexity.'},
-      {title: 'Long-term support', text: 'Our work does not end with a contract. We remain available for monitoring, adjustments and future decisions.'}
+      {title: 'Independent market perspective', text: 'We compare procurement paths and market options using transparent economic criteria.'},
+      {title: 'Transparent cost structures', text: 'You receive clear information on prices, terms, cost components and risks without unnecessary complexity.'},
+      {title: 'Ongoing support', text: 'Our work does not end with a contract. We continue to support market monitoring, contract decisions and future procurement.'}
     ],
-    processEyebrow: 'Our process', processTitle: 'Structured from analysis to implementation.',
+    processEyebrow: 'Our process', processTitle: 'Structured from consumption analysis to procurement.',
     process: [
-      {n: '01', title: 'Discovery', text: 'We clarify your objectives, constraints and actual advisory needs.'},
-      {n: '02', title: 'Analysis', text: 'We review contracts, data, market options and relevant economic factors.'},
-      {n: '03', title: 'Strategy', text: 'You receive a transparent recommendation with clear courses of action.'},
-      {n: '04', title: 'Implementation & support', text: 'We support implementation and remain available for monitoring, adjustments and follow-up questions.'}
+      {n: '01', title: 'Understand demand', text: 'We review consumption, contract structure, objectives and individual requirements.'},
+      {n: '02', title: 'Analyse the market', text: 'We assess current market conditions, existing contracts and relevant procurement options.'},
+      {n: '03', title: 'Build the strategy', text: 'You receive a clear recommendation for electricity, gas and the appropriate procurement timing.'},
+      {n: '04', title: 'Implement & monitor', text: 'We support tendering, contracting and ongoing market monitoring.'}
     ],
-    ctaEyebrow: 'Personal consultation', ctaTitle: 'Let’s talk about the decisions ahead.', ctaText: 'In an initial, non-binding conversation, we identify where we can create tangible value.'
+    ctaEyebrow: 'Personal energy advisory', ctaTitle: 'Let’s make your energy procurement clearer and more predictable.', ctaText: 'In a non-binding initial conversation, we identify concrete optimisation potential for electricity and gas.'
   },
   services: {
-    energy: {title: 'Energy', eyebrow: 'Procurement · Optimisation · Transparency', summary: 'Strategic energy procurement and cost optimisation for businesses, aligned with consumption, risk profile and market conditions.', points: ['Electricity and gas procurement', 'Spot and forward market strategies', 'Contract and cost analysis', 'Tenders & supplier comparison', 'Energy monitoring', 'Support for efficiency initiatives']},
-    finance: {title: 'Finance', eyebrow: 'Structure · Comparison · Planning security', summary: 'We structure financing projects transparently and compare options in terms of cost, flexibility and long-term sustainability.', points: ['Real estate financing', 'Private financing', 'Financing structure', 'Terms comparison', 'Refinancing', 'Long-term planning']},
-    realEstate: {title: 'Real Estate', eyebrow: 'Analysis · Perspective · Substance', summary: 'We support property decisions with a clear view of location, financing, return potential and long-term objectives.', points: ['Investment analysis', 'Return assessment', 'Financing concepts', 'Property & location assessment', 'Strategic support', 'Long-term advisory']},
-    telecom: {title: 'Telecommunications', eyebrow: 'Performance · Cost · Availability', summary: 'We assess telecommunications solutions for businesses and private clients, balancing performance, actual needs and cost.', points: ['Mobile', 'Fixed line & internet', 'Tariff review', 'Provider comparison', 'Cost optimisation', 'Needs analysis']}
+    electricity: {title: 'Electricity', eyebrow: 'Procurement · Market analysis · Contract optimisation', summary: 'Strategic electricity procurement for businesses, aligned with consumption profile, market conditions, contract term and risk appetite.', points: ['Existing contract analysis', 'Supplier and terms comparison', 'Spot and forward market models', 'Tenders & offer evaluation', 'Contract and term optimisation', 'Ongoing market monitoring']},
+    gas: {title: 'Gas', eyebrow: 'Strategy · Cost control · Planning security', summary: 'We structure gas procurement transparently and develop models that balance cost, flexibility and planning security.', points: ['Existing gas contract analysis', 'Market and price assessment', 'Spot and forward market strategies', 'Supplier comparison & tenders', 'Volume and term strategy', 'Monitoring & ongoing optimisation']},
+    procurement: {title: 'Energy Procurement & Optimisation', eyebrow: 'Analysis · Strategy · Implementation', summary: 'For businesses with more complex requirements, we develop a holistic electricity and gas procurement strategy including contract analysis, tendering and ongoing optimisation.', points: ['Consumption and load profile analysis', 'Electricity & gas procurement strategy', 'Spot and forward market models', 'Tenders & supplier comparison', 'Cost and contract optimisation', 'Ongoing advisory & market monitoring']}
   },
   company: {
-    eyebrow: 'Energiedienst Nord', title: 'Reliable advice for decisions that have an impact.', lead: 'Energiedienst Nord represents a modern approach to advisory: personal in collaboration, analytical in assessment and clear in communication.',
-    text1: 'Our role is not to place as many products as possible. Our goal is to make complex economic subjects understandable, enabling our clients to make well-founded decisions.',
-    text2: 'We combine market knowledge, structured analysis and a network of specialised partners. The result is solutions designed not only to look attractive today, but to remain appropriate over the long term.',
-    values: ['Transparency over sales pressure', 'Strategy over isolated decisions', 'Personal responsibility over anonymous processes', 'Long-term cooperation over short-term transactions']
+    eyebrow: 'Energiedienst Nord', title: 'Reliable energy advisory for decisions that matter.', lead: 'Energiedienst Nord represents a modern approach to energy advisory: personal in collaboration, analytical in assessment and clear in communication.',
+    text1: 'Our focus is entirely on electricity and gas. We help businesses better understand procurement, costs and contractual risks so they can make well-founded decisions.',
+    text2: 'We combine market knowledge with structured analysis and a broad view of available procurement models. The result is solutions designed not only to look attractive today, but to remain suitable for each company’s consumption and risk profile over time.',
+    values: ['Transparency over sales pressure', 'Strategy over short-term decisions', 'Personal responsibility over anonymous processes', 'Long-term support over one-off brokerage']
   },
   contact: {
-    eyebrow: 'Contact', title: 'A good conversation is the first step.', text: 'Tell us briefly what you would like to discuss. We will get back to you personally and define the next steps together.', email: 'Email', phone: 'Phone', location: 'Region', locationValue: 'Northern Germany · active nationwide'
+    eyebrow: 'Contact', title: 'A good conversation is the first step.', text: 'Tell us briefly about your current electricity or gas situation. We will get back to you personally and define the next steps together.', email: 'Email', phone: 'Phone', location: 'Region', locationValue: 'Northern Germany · active nationwide'
   },
-  footer: {claim: 'Strategic advisory for energy, finance and real estate.', legal: 'Legal', imprint: 'Legal notice', privacy: 'Privacy'}
+  footer: {claim: 'Strategic energy advisory for electricity and gas.', legal: 'Legal', imprint: 'Legal notice', privacy: 'Privacy'}
 }
 
 export default en
