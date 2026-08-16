@@ -8,7 +8,9 @@ const en = {
     intro: 'We support businesses with strategic electricity and gas procurement – independently, transparently and with a clear focus on cost, risk and long-term planning security.',
     primary: 'Book a consultation', secondary: 'Explore services',
     stats: [
-      {value: 'Power', label: 'procurement & optimisation'}, {value: 'Gas', label: 'strategy & contract management'}, {value: '1:1', label: 'personal support'}
+      {value: 'Power & Gas', label: 'procurement from one source'},
+      {value: 'Spot · Forward', label: 'flexible procurement models'},
+      {value: 'Monitoring', label: 'ongoing market observation'}
     ],
     servicesEyebrow: 'Our services', servicesTitle: 'Energy advisory that makes procurement more predictable.', servicesText: 'We focus entirely on electricity and gas – from market analysis and procurement strategy to the ongoing optimisation of existing contracts.',
     whyEyebrow: 'Why Energiedienst Nord', whyTitle: 'Good energy decisions start with market understanding.', whyText: 'Prices, contract terms and procurement models change continuously. We create transparency and develop strategies aligned with consumption, risk profile and business goals.',
