@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getMessages } from 'next-intl/server'
+import { Vazirmatn } from 'next/font/google'
 import { routing } from '@/i18n/routing'
 import { rtlLocales, type Locale } from '@/i18n/locales'
 import { getContent } from '@/content'
@@ -13,14 +14,38 @@ import '../../heroui.css'
 import '../../energy-services.css'
 import '../../multilingual.css'
 
-export function generateStaticParams() { return routing.locales.map((locale) => ({ locale })) }
+const vazirmatn = Vazirmatn({
+  subsets: ['arabic'],
+  display: 'swap',
+  variable: '--font-vazirmatn',
+})
 
-export default async function LocaleLayout({ children, params }: { children: ReactNode; params: Promise<{locale: string}> }) {
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
+
+export default async function LocaleLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params
   if (!hasLocale(routing.locales, locale)) notFound()
+
   const typedLocale = locale as Locale
   const messages = await getMessages()
   const t = getContent(typedLocale)
-  const dir = rtlLocales.includes(typedLocale) ? 'rtl' : 'ltr'
-  return <html lang={locale} dir={dir} suppressHydrationWarning><body><ThemeProvider><NextIntlClientProvider messages={messages}><Header locale={typedLocale} t={t}/><main>{children}</main><Footer locale={typedLocale} t={t}/></NextIntlClientProvider></ThemeProvider></body></html>
+  const isRtl = rtlLocales.includes(typedLocale)
+  const dir = isRtl ? 'rtl' : 'ltr'
+  const bodyClassName = typedLocale === 'fa' || typedLocale === 'ar' ? vazirmatn.className : undefined
+
+  return (
+    <html lang={locale} dir={dir} suppressHydrationWarning>
+      <body className={bodyClassName}>
+        <ThemeProvider>
+          <NextIntlClientProvider messages={messages}>
+            <Header locale={typedLocale} t={t} />
+            <main>{children}</main>
+            <Footer locale={typedLocale} t={t} />
+          </NextIntlClientProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  )
 }
