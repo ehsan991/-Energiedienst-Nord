@@ -2,7 +2,13 @@ import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import { Vazirmatn } from 'next/font/google'
+import {
+  Vazirmatn,
+  Noto_Sans_SC,
+  Noto_Sans_JP,
+  Noto_Sans_KR,
+  Noto_Sans_Devanagari,
+} from 'next/font/google'
 import { routing } from '@/i18n/routing'
 import { rtlLocales, type Locale } from '@/i18n/locales'
 import { getContent } from '@/content'
@@ -20,6 +26,39 @@ const vazirmatn = Vazirmatn({
   variable: '--font-vazirmatn',
 })
 
+const notoSansSC = Noto_Sans_SC({
+  display: 'swap',
+  preload: false,
+  variable: '--font-noto-sc',
+})
+
+const notoSansJP = Noto_Sans_JP({
+  display: 'swap',
+  preload: false,
+  variable: '--font-noto-jp',
+})
+
+const notoSansKR = Noto_Sans_KR({
+  display: 'swap',
+  preload: false,
+  variable: '--font-noto-kr',
+})
+
+const notoSansDevanagari = Noto_Sans_Devanagari({
+  display: 'swap',
+  preload: false,
+  variable: '--font-noto-devanagari',
+})
+
+const localeFontClasses: Partial<Record<Locale, string>> = {
+  fa: vazirmatn.className,
+  ar: vazirmatn.className,
+  zh: notoSansSC.className,
+  ja: notoSansJP.className,
+  ko: notoSansKR.className,
+  hi: notoSansDevanagari.className,
+}
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
@@ -33,7 +72,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const t = getContent(typedLocale)
   const isRtl = rtlLocales.includes(typedLocale)
   const dir = isRtl ? 'rtl' : 'ltr'
-  const bodyClassName = typedLocale === 'fa' || typedLocale === 'ar' ? vazirmatn.className : undefined
+  const bodyClassName = localeFontClasses[typedLocale]
 
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
