@@ -1,3 +1,4 @@
+import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 import de from '@/content/de'
 import en from '@/content/en'
@@ -20,7 +21,16 @@ export default async function Home({ params }: { params: Promise<{ locale: 'de'|
           <p className="eyebrow">{t.home.eyebrow}</p>
           <h1>{t.home.title}</h1>
           <p className="hero-lead">{t.home.intro}</p>
-          <div className="hero-actions"><Link className="button" href={`/${locale}/kontakt`}>{t.home.primary}<span>↗</span></Link><a className="text-link" href="#services">{t.home.secondary}<span>↓</span></a></div>
+          <div className="hero-actions">
+            <Link className="button" href={`/${locale}/kontakt`}>
+              {t.home.primary}
+              <ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" />
+            </Link>
+            <a className="text-link" href="#services">
+              {t.home.secondary}
+              <ArrowDown size={16} strokeWidth={1.7} aria-hidden="true" />
+            </a>
+          </div>
         </div>
         <div className="hero-panel">
           <div className="market-line"><span>MARKET / STRATEGY</span><span>EDN — 2026</span></div>
@@ -37,6 +47,6 @@ export default async function Home({ params }: { params: Promise<{ locale: 'de'|
 
     <section id="process" className="section"><div className="shell"><div className="section-heading"><div><p className="eyebrow">{t.home.processEyebrow}</p><h2>{t.home.processTitle}</h2></div></div><div className="process-grid">{t.home.process.map((p:any)=><article key={p.n}><span>{p.n}</span><h3>{p.title}</h3><p>{p.text}</p></article>)}</div></div></section>
 
-    <section className="section cta-section"><Noise/><div className="shell cta-inner"><p className="eyebrow">{t.home.ctaEyebrow}</p><h2>{t.home.ctaTitle}</h2><p>{t.home.ctaText}</p><Link href={`/${locale}/kontakt`} className="button button-light">{t.home.primary}<span>↗</span></Link></div></section>
+    <section className="section cta-section"><Noise/><div className="shell cta-inner"><p className="eyebrow">{t.home.ctaEyebrow}</p><h2>{t.home.ctaTitle}</h2><p>{t.home.ctaText}</p><Link href={`/${locale}/kontakt`} className="button button-light">{t.home.primary}<ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" /></Link></div></section>
   </>
 }
