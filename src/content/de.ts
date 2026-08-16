@@ -7,84 +7,78 @@ const de = {
     consultation: 'Beratung anfragen'
   },
   home: {
-    eyebrow: 'Energiedienst Nord · Beratung mit Substanz',
-    title: 'Komplexe Märkte. Klare Entscheidungen.',
-    intro: 'Wir unterstützen Unternehmen und Privatkunden dabei, Energie, Finanzierung und Immobilien strategisch zu planen – unabhängig, transparent und mit einem klaren Blick auf wirtschaftliche Chancen und Risiken.',
+    eyebrow: 'Energiedienst Nord · Energieberatung mit Substanz',
+    title: 'Komplexe Energiemärkte. Klare Entscheidungen.',
+    intro: 'Wir unterstützen Unternehmen bei der strategischen Beschaffung von Strom und Gas – unabhängig, transparent und mit einem klaren Blick auf Kosten, Risiken und langfristige Planungssicherheit.',
     primary: 'Beratung vereinbaren',
     secondary: 'Leistungen entdecken',
     stats: [
-      {value: '360°', label: 'ganzheitliche Beratung'},
-      {value: '1:1', label: 'persönliche Betreuung'},
-      {value: 'DE · EN', label: 'zweisprachige Beratung'}
+      {value: 'Strom', label: 'Beschaffung & Optimierung'},
+      {value: 'Gas', label: 'Strategie & Vertragsmanagement'},
+      {value: '1:1', label: 'persönliche Betreuung'}
     ],
-    servicesEyebrow: 'Beratungsfelder',
-    servicesTitle: 'Strategische Lösungen für wesentliche Entscheidungen.',
-    servicesText: 'Keine Standardpakete, sondern Lösungen, die zu Ihrer Ausgangslage, Ihren Zielen und Ihrem Zeithorizont passen.',
+    servicesEyebrow: 'Unsere Leistungen',
+    servicesTitle: 'Energieberatung, die Beschaffung planbar macht.',
+    servicesText: 'Wir konzentrieren uns vollständig auf Strom und Gas – von der Marktanalyse über die Beschaffungsstrategie bis zur laufenden Optimierung bestehender Verträge.',
     whyEyebrow: 'Warum Energiedienst Nord',
-    whyTitle: 'Beratung beginnt mit Verstehen.',
-    whyText: 'Märkte verändern sich. Gute Entscheidungen entstehen deshalb nicht aus einzelnen Angeboten, sondern aus belastbaren Analysen, verständlichen Vergleichen und einer Strategie, die auch morgen noch trägt.',
+    whyTitle: 'Gute Energieentscheidungen beginnen mit Marktverständnis.',
+    whyText: 'Preisbewegungen, Laufzeiten und Beschaffungsmodelle verändern sich kontinuierlich. Wir schaffen Transparenz und entwickeln Strategien, die zu Verbrauch, Risikoprofil und Unternehmenszielen passen.',
     benefits: [
-      {title: 'Unabhängige Perspektive', text: 'Wir betrachten Optionen im Markt und bewerten sie nach nachvollziehbaren wirtschaftlichen Kriterien.'},
-      {title: 'Transparente Entscheidungsgrundlagen', text: 'Sie erhalten klare Informationen zu Kosten, Chancen, Laufzeiten und Risiken – ohne unnötige Komplexität.'},
-      {title: 'Langfristige Begleitung', text: 'Unsere Arbeit endet nicht mit einem Vertragsabschluss. Wir bleiben Ansprechpartner für Anpassungen und neue Entscheidungen.'}
+      {title: 'Unabhängige Marktbetrachtung', text: 'Wir vergleichen Beschaffungswege und Marktoptionen nach nachvollziehbaren wirtschaftlichen Kriterien.'},
+      {title: 'Transparente Kostenstruktur', text: 'Sie erhalten klare Informationen zu Preisen, Laufzeiten, Preisbestandteilen und Risiken – ohne unnötige Komplexität.'},
+      {title: 'Laufende Betreuung', text: 'Unsere Arbeit endet nicht mit dem Vertragsabschluss. Wir begleiten Markt, Verträge und neue Beschaffungsentscheidungen kontinuierlich.'}
     ],
     processEyebrow: 'Unser Prozess',
-    processTitle: 'Strukturiert von der Analyse zur Umsetzung.',
+    processTitle: 'Strukturiert von der Verbrauchsanalyse zur Beschaffung.',
     process: [
-      {n: '01', title: 'Kennenlernen', text: 'Wir klären Ziele, Rahmenbedingungen und den tatsächlichen Beratungsbedarf.'},
-      {n: '02', title: 'Analyse', text: 'Wir prüfen bestehende Verträge, Daten, Marktoptionen und relevante wirtschaftliche Faktoren.'},
-      {n: '03', title: 'Strategie', text: 'Sie erhalten eine nachvollziehbare Empfehlung mit klaren Handlungsoptionen.'},
-      {n: '04', title: 'Umsetzung & Betreuung', text: 'Wir begleiten die Umsetzung und bleiben für Monitoring, Anpassungen und Folgefragen an Ihrer Seite.'}
+      {n: '01', title: 'Bedarf verstehen', text: 'Wir erfassen Verbrauch, Vertragsstruktur, Ziele und individuelle Anforderungen.'},
+      {n: '02', title: 'Markt analysieren', text: 'Wir prüfen aktuelle Marktbedingungen, bestehende Verträge und relevante Beschaffungsoptionen.'},
+      {n: '03', title: 'Strategie entwickeln', text: 'Sie erhalten eine nachvollziehbare Empfehlung für Strom, Gas und den passenden Beschaffungszeitpunkt.'},
+      {n: '04', title: 'Umsetzung & Monitoring', text: 'Wir begleiten Ausschreibung, Vertragsabschluss und die weitere Marktbeobachtung.'}
     ],
-    ctaEyebrow: 'Persönliche Beratung',
-    ctaTitle: 'Lassen Sie uns über Ihre nächsten Entscheidungen sprechen.',
-    ctaText: 'In einem unverbindlichen Erstgespräch klären wir, wo wir konkret Mehrwert schaffen können.'
+    ctaEyebrow: 'Persönliche Energieberatung',
+    ctaTitle: 'Lassen Sie uns Ihre Energiebeschaffung klarer und planbarer machen.',
+    ctaText: 'In einem unverbindlichen Erstgespräch prüfen wir, wo bei Strom und Gas konkret Optimierungspotenzial besteht.'
   },
   services: {
-    energy: {
-      title: 'Energie',
-      eyebrow: 'Beschaffung · Optimierung · Transparenz',
-      summary: 'Strategische Energiebeschaffung und Kostenoptimierung für Unternehmen – abgestimmt auf Verbrauch, Risikoprofil und Marktumfeld.',
-      points: ['Strom- und Gasbeschaffung', 'Spot- und Terminmarktstrategien', 'Vertrags- und Kostenanalyse', 'Ausschreibungen & Lieferantenvergleich', 'Energiemonitoring', 'Begleitung bei Energieeffizienzmaßnahmen']
+    electricity: {
+      title: 'Strom',
+      eyebrow: 'Beschaffung · Marktanalyse · Vertragsoptimierung',
+      summary: 'Strategische Strombeschaffung für Unternehmen – abgestimmt auf Verbrauchsprofil, Marktumfeld, Laufzeit und individuelle Risikobereitschaft.',
+      points: ['Analyse bestehender Stromverträge', 'Lieferanten- und Konditionsvergleich', 'Spot- und Terminmarktmodelle', 'Ausschreibungen & Angebotsbewertung', 'Vertrags- und Laufzeitoptimierung', 'Laufende Marktbeobachtung']
     },
-    finance: {
-      title: 'Finanzierung',
-      eyebrow: 'Struktur · Vergleich · Planungssicherheit',
-      summary: 'Wir strukturieren Finanzierungsvorhaben transparent und vergleichen Lösungswege im Hinblick auf Kosten, Flexibilität und langfristige Tragfähigkeit.',
-      points: ['Immobilienfinanzierung', 'Private Finanzierungen', 'Finanzierungsstruktur', 'Konditionsvergleich', 'Anschlussfinanzierung', 'Langfristige Planung']
+    gas: {
+      title: 'Gas',
+      eyebrow: 'Strategie · Kostenkontrolle · Planungssicherheit',
+      summary: 'Wir strukturieren die Gasbeschaffung transparent und entwickeln Beschaffungsmodelle, die Kosten, Flexibilität und Planungssicherheit sinnvoll ausbalancieren.',
+      points: ['Analyse bestehender Gasverträge', 'Markt- und Preisbewertung', 'Spot- und Terminmarktstrategien', 'Anbietervergleich & Ausschreibung', 'Laufzeiten- und Mengenstrategie', 'Monitoring & Nachoptimierung']
     },
-    realEstate: {
-      title: 'Immobilien',
-      eyebrow: 'Analyse · Perspektive · Substanz',
-      summary: 'Wir begleiten Immobilienentscheidungen mit einem nüchternen Blick auf Standort, Finanzierung, Renditepotenzial und langfristige Zielsetzung.',
-      points: ['Investmentanalyse', 'Renditebetrachtung', 'Finanzierungskonzept', 'Objekt- und Standortbewertung', 'Strategische Begleitung', 'Langfristige Betreuung']
-    },
-    telecom: {
-      title: 'Telekommunikation',
-      eyebrow: 'Leistung · Kosten · Verfügbarkeit',
-      summary: 'Wir prüfen Telekommunikationslösungen für Unternehmen und Privatkunden und bringen Leistung, Bedarf und Kosten in ein sinnvolles Verhältnis.',
-      points: ['Mobilfunk', 'Festnetz & Internet', 'Tarifprüfung', 'Anbietervergleich', 'Kostenoptimierung', 'Bedarfsanalyse']
+    procurement: {
+      title: 'Energiebeschaffung & Optimierung',
+      eyebrow: 'Analyse · Strategie · Umsetzung',
+      summary: 'Für Unternehmen mit komplexeren Anforderungen entwickeln wir eine ganzheitliche Beschaffungsstrategie für Strom und Gas – inklusive Vertragsanalyse, Ausschreibung und laufender Optimierung.',
+      points: ['Verbrauchs- und Lastprofilanalyse', 'Beschaffungsstrategie für Strom & Gas', 'Spotmarkt- und Terminmarktmodelle', 'Ausschreibungen & Lieferantenvergleich', 'Kosten- und Vertragsoptimierung', 'Laufende Betreuung & Marktmonitoring']
     }
   },
   company: {
     eyebrow: 'Energiedienst Nord',
-    title: 'Verlässliche Beratung für Entscheidungen mit Wirkung.',
-    lead: 'Energiedienst Nord steht für eine moderne Form der Beratung: persönlich in der Zusammenarbeit, analytisch in der Bewertung und klar in der Kommunikation.',
-    text1: 'Wir verstehen unsere Aufgabe nicht darin, möglichst viele Produkte zu vermitteln. Unser Anspruch ist es, komplexe wirtschaftliche Themen so aufzubereiten, dass unsere Mandanten fundierte Entscheidungen treffen können.',
-    text2: 'Dafür verbinden wir Marktkenntnis mit strukturierten Analysen und einem Netzwerk spezialisierter Partner. So entstehen Lösungen, die nicht nur im Moment attraktiv wirken, sondern auch langfristig zur jeweiligen Situation passen.',
-    values: ['Transparenz statt Verkaufsdruck', 'Strategie statt Einzelentscheidung', 'Persönliche Verantwortung statt anonymer Prozesse', 'Langfristige Zusammenarbeit statt kurzfristiger Abschlüsse']
+    title: 'Verlässliche Energieberatung für Entscheidungen mit Wirkung.',
+    lead: 'Energiedienst Nord steht für moderne Energieberatung: persönlich in der Zusammenarbeit, analytisch in der Bewertung und klar in der Kommunikation.',
+    text1: 'Unser Fokus liegt vollständig auf Strom und Gas. Wir helfen Unternehmen dabei, Beschaffung, Kosten und Vertragsrisiken besser zu verstehen und fundierte Entscheidungen zu treffen.',
+    text2: 'Dafür verbinden wir Marktkenntnis mit strukturierten Analysen und einem breiten Blick auf verfügbare Beschaffungsmodelle. So entstehen Lösungen, die nicht nur heute attraktiv sind, sondern langfristig zur jeweiligen Verbrauchs- und Risikostruktur passen.',
+    values: ['Transparenz statt Verkaufsdruck', 'Strategie statt kurzfristiger Einzelentscheidung', 'Persönliche Verantwortung statt anonymer Prozesse', 'Langfristige Betreuung statt einmaliger Vermittlung']
   },
   contact: {
     eyebrow: 'Kontakt',
     title: 'Der erste Schritt ist ein gutes Gespräch.',
-    text: 'Beschreiben Sie uns kurz Ihr Anliegen. Wir melden uns persönlich bei Ihnen und klären gemeinsam die nächsten Schritte.',
+    text: 'Beschreiben Sie uns kurz Ihre aktuelle Situation bei Strom oder Gas. Wir melden uns persönlich und klären gemeinsam die nächsten Schritte.',
     email: 'E-Mail',
     phone: 'Telefon',
     location: 'Region',
     locationValue: 'Norddeutschland · deutschlandweit tätig'
   },
   footer: {
-    claim: 'Strategische Beratung für Energie, Finanzierung und Immobilien.',
+    claim: 'Strategische Energieberatung für Strom und Gas.',
     legal: 'Rechtliches',
     imprint: 'Impressum',
     privacy: 'Datenschutz'
