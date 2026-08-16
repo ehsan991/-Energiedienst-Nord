@@ -1,48 +1,38 @@
 const en = {
-  nav: {
-    services: 'Services', company: 'Company', process: 'How we work', contact: 'Contact', consultation: 'Request consultation'
-  },
+  nav: {services: 'Services', company: 'Company', process: 'How we work', contact: 'Contact', consultation: 'Request consultation'},
   home: {
-    eyebrow: 'Energiedienst Nord · Energy advisory with substance',
-    title: 'Complex energy markets. Clear decisions.',
-    intro: 'We support businesses with strategic electricity and gas procurement – independently, transparently and with a clear focus on cost, risk and long-term planning security.',
+    eyebrow: 'Energiedienst Nord · Clear energy advice', title: 'Complex energy markets. Clear decisions.',
+    intro: 'We support private and business customers with electricity and gas – transparently, personally and with a clear focus on suitable tariffs, contract terms and reliable handling.',
     primary: 'Book a consultation', secondary: 'Explore services',
-    stats: [
-      {value: 'Power & Gas', label: 'procurement from one source'},
-      {value: 'Spot · Forward', label: 'flexible procurement models'},
-      {value: 'Monitoring', label: 'ongoing market observation'}
-    ],
-    servicesEyebrow: 'Our services', servicesTitle: 'Energy advisory that makes procurement more predictable.', servicesText: 'We focus entirely on electricity and gas – from market analysis and procurement strategy to the ongoing optimisation of existing contracts.',
-    whyEyebrow: 'Why Energiedienst Nord', whyTitle: 'Good energy decisions start with market understanding.', whyText: 'Prices, contract terms and procurement models change continuously. We create transparency and develop strategies aligned with consumption, risk profile and business goals.',
+    trustEyebrow: 'Trust & advice', trustTitle: 'Your reliable partner for electricity and gas.',
+    trustText1: 'We help private and business customers find suitable electricity and gas contracts and make informed decisions in the energy market. Our approach combines personal advice, transparent comparisons and reliable handling.',
+    trustText2: 'Our goal is to make complex offers, prices and contract models easier to understand and to find a solution together that genuinely fits your needs.',
+    trustClaim: 'Expert advice. Transparent comparison. Reliable support.',
+    trustPrinciples: ['Personal support', 'Transparent advice', 'Reliable handling'],
+    servicesEyebrow: 'Our services', servicesTitle: 'Energy advice that makes decisions easier.', servicesText: 'We focus on electricity and gas – from personal tariff advice and offer comparisons to structured procurement and ongoing support.',
+    whyEyebrow: 'Why Energiedienst Nord', whyTitle: 'Personal advice. Transparent comparisons. Reliable support.', whyText: 'The energy market is complex and offers are not always easy to compare. We create clarity, explain the relevant differences and support you personally until the right solution is found.',
     benefits: [
-      {title: 'Independent market perspective', text: 'We compare procurement paths and market options using transparent economic criteria.'},
-      {title: 'Transparent cost structures', text: 'You receive clear information on prices, terms, cost components and risks without unnecessary complexity.'},
-      {title: 'Ongoing support', text: 'Our work does not end with a contract. We continue to support market monitoring, contract decisions and future procurement.'}
+      {title: 'Personal support', text: 'Your individual situation, consumption and requirements are at the centre of our advice – without anonymous standard processes.'},
+      {title: 'Transparent advice', text: 'We make prices, terms and contract conditions understandable and clearly explain the differences that matter.'},
+      {title: 'Reliable handling', text: 'From selection through contract completion, we guide the next steps in a structured way and remain available afterwards.'}
     ],
-    processEyebrow: 'Our process', processTitle: 'Structured from consumption analysis to procurement.',
+    processEyebrow: 'Our process', processTitle: 'A clear path to the right energy contract.',
     process: [
-      {n: '01', title: 'Understand demand', text: 'We review consumption, contract structure, objectives and individual requirements.'},
-      {n: '02', title: 'Analyse the market', text: 'We assess current market conditions, existing contracts and relevant procurement options.'},
-      {n: '03', title: 'Build the strategy', text: 'You receive a clear recommendation for electricity, gas and the appropriate procurement timing.'},
-      {n: '04', title: 'Implement & monitor', text: 'We support tendering, contracting and ongoing market monitoring.'}
+      {n: '01', title: 'Understand your needs', text: 'We review your current situation, consumption and personal or business requirements.'},
+      {n: '02', title: 'Compare offers', text: 'We compare suitable electricity and gas offers as well as relevant prices and contract conditions.'},
+      {n: '03', title: 'Find the right solution', text: 'You receive a clear recommendation aligned with your needs and priorities.'},
+      {n: '04', title: 'Handling & support', text: 'We support the contract process reliably and remain available for further questions.'}
     ],
-    ctaEyebrow: 'Personal energy advisory', ctaTitle: 'Let’s make your energy procurement clearer and more predictable.', ctaText: 'In a non-binding initial conversation, we identify concrete optimisation potential for electricity and gas.'
+    ctaEyebrow: 'Personal energy advice', ctaTitle: 'Let’s find the right electricity and gas solution together.', ctaText: 'In a non-binding initial conversation, we review your situation and transparently explain the options that make sense for you.'
   },
   services: {
-    electricity: {title: 'Electricity', eyebrow: 'Procurement · Market analysis · Contract optimisation', summary: 'Strategic electricity procurement for businesses, aligned with consumption profile, market conditions, contract term and risk appetite.', points: ['Existing contract analysis', 'Supplier and terms comparison', 'Spot and forward market models', 'Tenders & offer evaluation', 'Contract and term optimisation', 'Ongoing market monitoring']},
-    gas: {title: 'Gas', eyebrow: 'Strategy · Cost control · Planning security', summary: 'We structure gas procurement transparently and develop models that balance cost, flexibility and planning security.', points: ['Existing gas contract analysis', 'Market and price assessment', 'Spot and forward market strategies', 'Supplier comparison & tenders', 'Volume and term strategy', 'Monitoring & ongoing optimisation']},
-    procurement: {title: 'Energy Procurement & Optimisation', eyebrow: 'Analysis · Strategy · Implementation', summary: 'For businesses with more complex requirements, we develop a holistic electricity and gas procurement strategy including contract analysis, tendering and ongoing optimisation.', points: ['Consumption and load profile analysis', 'Electricity & gas procurement strategy', 'Spot and forward market models', 'Tenders & supplier comparison', 'Cost and contract optimisation', 'Ongoing advisory & market monitoring']}
+    electricity: {title: 'Electricity', eyebrow: 'Tariff comparison · Advice · Contract optimisation', summary: 'Suitable electricity solutions for private and business customers – transparently compared and personally tailored to your requirements.', points: ['Existing contract analysis', 'Tariff and supplier comparison', 'Price and contract term review', 'Advice on terms and models', 'Support with contract completion', 'Personal support']},
+    gas: {title: 'Gas', eyebrow: 'Comparison · Transparency · Support', summary: 'We help you select a suitable gas contract and make prices, conditions and terms easier to compare and understand.', points: ['Existing gas contract analysis', 'Tariff and supplier comparison', 'Price and condition review', 'Advice on contract terms', 'Support with handling', 'Personal support']},
+    procurement: {title: 'Energy Procurement & Optimisation', eyebrow: 'Analysis · Comparison · Implementation', summary: 'For business customers with more extensive requirements, we structure electricity and gas procurement from analysis through to the right contract solution.', points: ['Consumption and contract analysis', 'Electricity & gas procurement', 'Spot and forward market models', 'Offer and supplier comparison', 'Cost and contract optimisation', 'Ongoing support']}
   },
-  company: {
-    eyebrow: 'Energiedienst Nord', title: 'Reliable energy advisory for decisions that matter.', lead: 'Energiedienst Nord represents a modern approach to energy advisory: personal in collaboration, analytical in assessment and clear in communication.',
-    text1: 'Our focus is entirely on electricity and gas. We help businesses better understand procurement, costs and contractual risks so they can make well-founded decisions.',
-    text2: 'We combine market knowledge with structured analysis and a broad view of available procurement models. The result is solutions designed not only to look attractive today, but to remain suitable for each company’s consumption and risk profile over time.',
-    values: ['Transparency over sales pressure', 'Strategy over short-term decisions', 'Personal responsibility over anonymous processes', 'Long-term support over one-off brokerage']
-  },
-  contact: {
-    eyebrow: 'Contact', title: 'A good conversation is the first step.', text: 'Tell us briefly about your current electricity or gas situation. We will get back to you personally and define the next steps together.', email: 'Email', phone: 'Phone', location: 'Region', locationValue: 'Northern Germany · active nationwide'
-  },
-  footer: {claim: 'Strategic energy advisory for electricity and gas.', legal: 'Legal', imprint: 'Legal notice', privacy: 'Privacy'}
+  company: {eyebrow: 'Energiedienst Nord', title: 'Reliable energy advice for electricity and gas.', lead: 'Energiedienst Nord stands for personal advice, transparent brokerage and reliable support for electricity and gas.', text1: 'We help private and business customers understand offers, compare suitable contracts and find a solution that fits their actual needs.', text2: 'We value clear communication and understandable decisions. Our aim is not simply to close a contract, but to provide advice that makes it clear why a solution is right for you.', values: ['Transparent advice', 'Personal support', 'Clear comparisons', 'Reliable handling']},
+  contact: {eyebrow: 'Contact', title: 'A good conversation is the first step.', text: 'Tell us briefly about your current electricity or gas situation. We will get back to you personally and define the next steps together.', email: 'Email', phone: 'Phone', location: 'Region', locationValue: 'Northern Germany · active nationwide'},
+  footer: {claim: 'Personal and transparent advice for electricity and gas.', legal: 'Legal', imprint: 'Legal notice', privacy: 'Privacy'}
 }
 
 export default en
