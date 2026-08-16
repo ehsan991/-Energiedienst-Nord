@@ -1,10 +1,7 @@
 import { getRequestConfig } from 'next-intl/server'
 import { hasLocale } from 'next-intl'
 import { routing } from './routing'
-import de from '@/content/de'
-import en from '@/content/en'
-
-const dictionaries = { de, en }
+import { dictionaries } from '@/content'
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale
