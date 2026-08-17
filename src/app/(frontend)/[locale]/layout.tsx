@@ -19,36 +19,13 @@ import '../../globals.css'
 import '../../heroui.css'
 import '../../energy-services.css'
 import '../../multilingual.css'
+import '../../projection.css'
 
-const vazirmatn = Vazirmatn({
-  subsets: ['arabic'],
-  display: 'swap',
-  variable: '--font-vazirmatn',
-})
-
-const notoSansSC = Noto_Sans_SC({
-  display: 'swap',
-  preload: false,
-  variable: '--font-noto-sc',
-})
-
-const notoSansJP = Noto_Sans_JP({
-  display: 'swap',
-  preload: false,
-  variable: '--font-noto-jp',
-})
-
-const notoSansKR = Noto_Sans_KR({
-  display: 'swap',
-  preload: false,
-  variable: '--font-noto-kr',
-})
-
-const notoSansDevanagari = Noto_Sans_Devanagari({
-  display: 'swap',
-  preload: false,
-  variable: '--font-noto-devanagari',
-})
+const vazirmatn = Vazirmatn({ subsets: ['arabic'], display: 'swap', variable: '--font-vazirmatn' })
+const notoSansSC = Noto_Sans_SC({ display: 'swap', preload: false, variable: '--font-noto-sc' })
+const notoSansJP = Noto_Sans_JP({ display: 'swap', preload: false, variable: '--font-noto-jp' })
+const notoSansKR = Noto_Sans_KR({ display: 'swap', preload: false, variable: '--font-noto-kr' })
+const notoSansDevanagari = Noto_Sans_Devanagari({ display: 'swap', preload: false, variable: '--font-noto-devanagari' })
 
 const localeFontClasses: Partial<Record<Locale, string>> = {
   fa: vazirmatn.className,
@@ -59,19 +36,15 @@ const localeFontClasses: Partial<Record<Locale, string>> = {
   hi: notoSansDevanagari.className,
 }
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
-}
+export function generateStaticParams() { return routing.locales.map((locale) => ({ locale })) }
 
 export default async function LocaleLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params
   if (!hasLocale(routing.locales, locale)) notFound()
-
   const typedLocale = locale as Locale
   const messages = await getMessages()
   const t = getContent(typedLocale)
-  const isRtl = rtlLocales.includes(typedLocale)
-  const dir = isRtl ? 'rtl' : 'ltr'
+  const dir = rtlLocales.includes(typedLocale) ? 'rtl' : 'ltr'
   const bodyClassName = localeFontClasses[typedLocale]
 
   return (
